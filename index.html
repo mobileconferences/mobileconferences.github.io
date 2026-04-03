@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Conferences 2026 — Discover the Best Mobile Dev Events</title>
+  <meta name="description"
+    content="A curated directory of the best mobile development conferences happening around the world in 2026. Find iOS, Android, and cross-platform events.">
+  <meta name="keywords"
+    content="mobile conferences 2026, iOS conferences, Android events, Swift conferences, Flutter events, mobile development">
+  <meta property="og:title" content="Mobile Conferences 2026">
+  <meta property="og:description"
+    content="Discover the best mobile development conferences happening around the world in 2026.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand" id="nav-brand">
+        <div class="nav-logo">
+          <img src="assets/logo.png" alt="Mobile Conferences 2026 Logo" width="40" height="40">
+        </div>
+        <span class="nav-title">Mobile Conferences 2026</span>
+      </a>
+      <div class="nav-links">
+        <a href="#submit" class="nav-link" id="nav-submit">Submit</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-glow hero-glow-tl"></div>
+      <div class="hero-glow hero-glow-br"></div>
+      <div class="hero-content animate-fade-up">
+        <div class="hero-logo-wrapper">
+          <img src="assets/logo.png" alt="Mobile Conferences 2026" class="hero-logo-img" width="80" height="80">
+        </div>
+        <h1 class="hero-title">Mobile Conferences 2026</h1>
+        <p class="hero-subtitle">Hello developers 👋 Discover the best mobile development conferences happening around
+          the world in 2026.</p>
+        <div class="hero-actions">
+          <a href="#directory" class="btn btn-white" id="hero-explore">Explore Directory</a>
+          <a href="#submit" class="btn btn-ghost" id="hero-submit">Submit Event</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="section featured-section" id="featured">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Premium Events</span>
+          <h2 class="section-title">Featured Conferences</h2>
+        </div>
+        <div class="featured-grid" id="featured-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Directory Section -->
+    <section class="section directory-section" id="directory">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Full Directory</h2>
+          <p class="section-desc">Browse our complete list of mobile development events. Use filters to find exactly
+            what you're looking for.</p>
+        </div>
+
+        <!-- Search & Filter -->
+        <div class="directory-controls" id="directory-controls">
+          <div class="search-wrapper">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+            <input type="text" id="search-input" class="search-input" placeholder="Search by name, tag, or city...">
+          </div>
+          <div class="filter-pills" id="filter-pills">
+            <button class="filter-pill active" data-filter="All" id="filter-all">All</button>
+            <button class="filter-pill" data-filter="iOS" id="filter-ios">iOS</button>
+            <button class="filter-pill" data-filter="Android" id="filter-android">Android</button>
+            <button class="filter-pill" data-filter="Cross-platform" id="filter-cross">Cross-platform</button>
+          </div>
+        </div>
+
+        <!-- Conference List -->
+        <div class="directory-list" id="directory-list">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state hidden" id="empty-state">
+          <div class="empty-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+            </svg>
+          </div>
+          <h3 class="empty-title">No conferences found</h3>
+          <p class="empty-desc">Try adjusting your search or filters.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Submit Section -->
+    <section class="section submit-section" id="submit">
+      <div class="container">
+        <div class="submit-card">
+          <div class="submit-glow submit-glow-tl"></div>
+          <div class="submit-glow submit-glow-br"></div>
+          <div class="submit-inner">
+            <div class="submit-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v8" />
+                <path d="M8 12h8" />
+              </svg>
+            </div>
+            <h2 class="submit-title">Missed a Conference?</h2>
+            <p class="submit-desc">Help the community stay updated. If you know of a mobile conference that isn't listed
+              here, let us know and we'll add it to the directory.</p>
+            <a href="https://github.com/mobileconferences/mobileconferences.github.io/issues" target="_blank"
+              rel="noopener noreferrer" class="btn btn-submit" id="btn-submit-conf">Submit a Conference</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <div class="footer-logo">
+              <img src="assets/logo.png" alt="Logo" width="32" height="32">
+            </div>
+            <span class="footer-brand-title">Mobile Conferences 2026</span>
+          </div>
+          <p class="footer-brand-desc">Mobile Conferences 2026 is a curated directory of global mobile development
+            events. Event details may change—please verify on official websites.
+          </p>
+        </div>
+        <div class="footer-links-simple">
+          <a href="mailto:mobile.conferences@gmail.com" class="footer-link-item" id="footer-contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            Contact
+          </a>
+
+          <a href="privacy.html" class="footer-link-item" id="footer-privacy">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+            </svg>
+            Privacy Policy
+          </a>
+          <div class="footer-made">Made for developers <span class="heart">❤️</span></div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
