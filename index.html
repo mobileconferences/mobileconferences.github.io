@@ -29,9 +29,10 @@
         <div class="nav-logo">
           <img src="assets/logo.png" alt="Mobile Conferences 2026 Logo" width="40" height="40">
         </div>
-        <span class="nav-title">Mobile Conferences 2026</span>
+        <span class="nav-title">Mobile Conferences</span>
       </a>
       <div class="nav-links">
+        <a href="#app" class="nav-link" id="nav-app">Get the App</a>
         <a href="#submit" class="nav-link" id="nav-submit">Submit</a>
       </div>
     </div>
@@ -65,6 +66,85 @@
         </div>
         <div class="featured-grid" id="featured-grid">
           <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section class="section app-section" id="app">
+      <div class="container">
+        <div class="app-grid">
+          <!-- Screenshots Side -->
+          <div class="app-screenshots-side">
+            <div class="app-screenshots-track-wrapper">
+              <div class="app-screenshots-track" id="app-screenshots-track">
+                <div class="app-screenshot-frame">
+                  <img src="assets/Screenshots/home.jpg" alt="App Home Screen" class="app-screenshot-img">
+                </div>
+                <div class="app-screenshot-frame">
+                  <img src="assets/Screenshots/evets.jpg" alt="App Events Screen" class="app-screenshot-img">
+                </div>
+                <div class="app-screenshot-frame">
+                  <img src="assets/Screenshots/event-details.jpg" alt="App Event Details Screen"
+                    class="app-screenshot-img">
+                </div>
+                <div class="app-screenshot-frame">
+                  <img src="assets/Screenshots/videos.jpg" alt="App Videos Screen" class="app-screenshot-img">
+                </div>
+              </div>
+            </div>
+            <!-- Dots -->
+            <div class="app-dots" id="app-dots">
+              <button class="app-dot active" data-index="0" aria-label="Screenshot 1"></button>
+              <button class="app-dot" data-index="1" aria-label="Screenshot 2"></button>
+              <button class="app-dot" data-index="2" aria-label="Screenshot 3"></button>
+              <button class="app-dot" data-index="3" aria-label="Screenshot 4"></button>
+            </div>
+          </div>
+
+          <!-- Info Side -->
+          <div class="app-info-side">
+            <span class="section-eyebrow">Now on iOS</span>
+            <h2 class="app-info-title">Your Conference<br>Companion</h2>
+            <p class="app-info-desc">Browse, save, and never miss a mobile development conference. All events in one
+              place — optimised for your iPhone.</p>
+
+            <ul class="app-features">
+              <li class="app-feature-item">
+                <span class="app-feature-icon">📅</span>
+                <span>Browse upcoming &amp; past conferences</span>
+              </li>
+              <li class="app-feature-item">
+                <span class="app-feature-icon">🎬</span>
+                <span>Watch conference talk videos</span>
+              </li>
+              <li class="app-feature-item">
+                <span class="app-feature-icon">🔔</span>
+                <span>Add events to your calendar</span>
+              </li>
+              <li class="app-feature-item">
+                <span class="app-feature-icon">🌍</span>
+                <span>Filter by platform &amp; region</span>
+              </li>
+            </ul>
+
+            <div class="app-download-area">
+              <!-- QR Code -->
+              <div class="app-qr-wrap">
+                <img src="assets/qr-code.png" alt="Scan to download Mobile Conferences app" class="app-qr-img">
+                <span class="app-qr-label">Scan to download</span>
+              </div>
+              <!-- App Store Badge -->
+              <div class="app-badge-wrap">
+                <a href="https://apps.apple.com/us/app/mobile-conferences-2026/id6762044196?itscg=30200&itsct=apps_box_badge&mttnsubad=6762044196"
+                  target="_blank" rel="noopener noreferrer" class="app-store-link" id="btn-app-store">
+                  <img
+                    src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1776038400"
+                    alt="Download on the App Store" class="app-store-badge">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -174,6 +254,15 @@
             </svg>
             Privacy Policy
           </a>
+
+          <a href="mailto:mobile.conferences@gmail.com?subject=Sponsorship%20Inquiry" class="footer-link-item footer-link-sponsor" id="footer-sponsor">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            Become a Sponsor
+          </a>
+
           <div class="footer-made">Made for developers <span class="heart">❤️</span></div>
 
         </div>

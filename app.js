@@ -480,7 +480,68 @@ const CONFERENCES = [
     });
   });
 
+  // --- App Screenshots Carousel ---
+  function initAppCarousel() {
+    const track = document.getElementById("app-screenshots-track");
+    const dots = document.querySelectorAll(".app-dot");
+    if (!track || !dots.length) return;
+
+    const totalSlides = dots.length;
+    let current = 0;
+    let timer = null;
+
+    function goTo(index) {
+      current = (index + totalSlides) % totalSlides;
+      track.style.transform = "translateX(-" + (current * 100) + "%)";
+      dots.forEach(function(d, i) {
+        d.classList.toggle("active", i === current);
+      });
+    }
+
+    function startAuto() {
+      timer = setInterval(function() { goTo(current + 1); }, 3200);
+    }
+
+    function stopAuto() {
+      clearInterval(timer);
+    }
+
+    // Dot click
+    dots.forEach(function(dot) {
+      dot.addEventListener("click", function() {
+        stopAuto();
+        goTo(parseInt(dot.dataset.index, 10));
+        startAuto();
+      });
+    });
+
+    // Touch/swipe support
+    var touchStartX = 0;
+    track.addEventListener("touchstart", function(e) {
+      touchStartX = e.touches[0].clientX;
+      stopAuto();
+    }, { passive: true });
+    track.addEventListener("touchend", function(e) {
+      var diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) {
+        goTo(diff > 0 ? current + 1 : current - 1);
+      }
+      startAuto();
+    }, { passive: true });
+
+    // Pause on hover
+    var wrapper = track.closest(".app-screenshots-track-wrapper");
+    if (wrapper) {
+      wrapper.addEventListener("mouseenter", stopAuto);
+      wrapper.addEventListener("mouseleave", startAuto);
+    }
+
+    goTo(0);
+    startAuto();
+  }
+
   // --- Initialize ---
   renderFeatured();
   renderDirectory();
+  initAppCarousel();
 })();
